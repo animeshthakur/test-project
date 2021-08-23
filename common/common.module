@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains common.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function common_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the at_app_api module.
+    case 'help.page.common':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('common module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

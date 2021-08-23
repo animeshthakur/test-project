@@ -1,0 +1,7 @@
+system.admin_ProductBarcode:
+  path: '/admin/config/product-barcode'
+  defaults:
+    _controller: '\Drupal\system\Controller\ProductBarcode::getData'
+    _title: 'Product Barcode'
+  requirements:
+    _permission: 'access administration pages'
